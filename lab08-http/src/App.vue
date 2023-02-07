@@ -5,23 +5,16 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="https://i0.wp.com/www.dafontfree.co/wp-content/uploads/2021/11/Amazon-Logo-Font-1-scaled.jpg?resize=2560%2C1578"
-      width="250"
-      height="125"
-    />
+ 
 
     <div class="wrapper">
-      <HelloWorld msg="Amazon Product" />
+      <HelloWorld msg="You did it!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/Search">Product Search</RouterLink>
-        <RouterLink to="/Details">Product Details</RouterLink>
-        <RouterLink to="/Reviews">Product Reviews</RouterLink>
-        <RouterLink to="/Categories">Product Categories</RouterLink>
+        <RouterLink to="/User">User</RouterLink>
+        <RouterLink to="/Photos">Photos</RouterLink>
+
       </nav>
     </div>
   </header>

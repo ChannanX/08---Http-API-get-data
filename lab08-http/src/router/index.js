@@ -1,10 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-//import SearchView from "../views/SearchView.vue";
-//import ReviewsView from "../views/ReviewsView.vue";
-//import DetailsView from "../views/DetailsView.vue";
-//import CategoriesView from "../views/CategoriesView.vue";
-
+import UserView from "../views/UserView.vue";
+import PhotosView from "../views/PhotosView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,25 +12,16 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/Search",
-      name: "Search",
-      component: () => import("../views/SearchView.vue"),
+      path: "/user",
+      name: "user",
+      component: UserView,
+    },    {
+      path: "/photos",
+      name: "photos",
+      component: PhotosView,
     },
-    {
-      path: "/Reviews",
-      name: "Reviews",
-      component: () => import("../views/ReviewsView.vue"),
-    },
-    {
-      path: "/Details",
-      name: "Details",
-      component: () => import("../views/DetailsView.vue"),
-    },
-    {
-      path: "/Categories",
-      name: "Categories",
-      component: () => import("../views/CategoriesView.vue"),
-    },
+
+
   ],
 });
 
