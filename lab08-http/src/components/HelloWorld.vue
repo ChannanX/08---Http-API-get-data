@@ -7,15 +7,14 @@ defineProps({
 });
 </script>
 
-<template>
+<template style="bgcolor=black">
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3 style="color: orange">
-      Easy way to collect basic information from amazon . Search for products,
-      extract reviews and explore keywords. Amazon is available in 16 countries
-      and you can search for a product in any of those countries by setting
-      country value
-    </h3>
+    <div class="container">
+      <div class="row">
+        <h1 class="green text-center">{{ msg }}</h1>
+        <h3 class="text-center" style="color: orange"></h3>
+      </div>
+    </div>
   </div>
 </template>
 

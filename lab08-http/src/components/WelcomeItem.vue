@@ -14,13 +14,15 @@
 
 <style scoped>
 .item {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
+
 }
 
 .details {
-  flex: 1;
-  margin-left: 1rem;
+  flex: 3;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 i {
@@ -33,15 +35,16 @@ i {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.7rem;
   color: var(--color-heading);
 }
 
 @media (min-width: 1024px) {
   .item {
-    margin-top: 0;
+    
+    margin-top: 0.7;
     padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
   }
 
@@ -54,6 +57,7 @@ h3 {
     border-radius: 8px;
     width: 50px;
     height: 50px;
+
   }
 
   .item:before {

@@ -4,21 +4,19 @@ import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <header>
- 
+  <div class="d-flex justify-content-center">
+    <header>
+      <div class="wrapper container row">
+        <HelloWorld msg="USA" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/User">User</RouterLink>
-        <RouterLink to="/Photos">Photos</RouterLink>
-
-      </nav>
-    </div>
-  </header>
-
+        <nav class="text-center">
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/Photo">Photo</RouterLink>
+          <RouterLink to="/Population">Population</RouterLink>
+        </nav>
+      </div>
+    </header>
+  </div>
   <RouterView />
 </template>
 
@@ -34,7 +32,6 @@ header {
 }
 
 nav {
-  width: 100%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
