@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import PhotoView from "../views/PhotoView.vue";
-import PopulationView from "../views/populationView.vue";
+import PopulationView from "../views/PopulationView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
